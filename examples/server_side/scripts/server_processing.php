@@ -47,6 +47,7 @@ $columns = array(
 			return '$'.number_format($d);
 		}
 	)
+	$db->exec("set names utf8"); // add charset for cirilic data
 );
 
 // SQL server connection information
