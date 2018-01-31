@@ -397,7 +397,7 @@ class SSP {
 				"The error reported by the server was: ".$e->getMessage()
 			);
 		}
-
+		$db->exec("set names utf8"); //charset query
 		return $db;
 	}
 
